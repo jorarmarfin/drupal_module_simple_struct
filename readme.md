@@ -1,3 +1,5 @@
+<p align="center"><a href="https://luisitomayta.com" target="_blank"><img src="https://luisitomayta.com/wp-content/uploads/2024/04/icon_simple_struct.webp" width="400" alt="IdeSlip"></a></p>
+
 # Simple Struct Module for Drupal
 
 ## Descripción
