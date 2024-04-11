@@ -1,0 +1,6 @@
+simple_struct.admin:
+  title: 'Simplificar Estructura'
+  description: 'Desnormaliza un Content Types para simplificar la estructura de datos.'
+  parent: system.admin_structure
+  route_name: simple_struct.admin
+  weight: 100

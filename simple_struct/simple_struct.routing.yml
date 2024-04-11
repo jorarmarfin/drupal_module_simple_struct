@@ -1,0 +1,15 @@
+simple_struct.test:
+  path: '/test'
+  defaults:
+    _controller: '\Drupal\simple_struct\Controller\TestController::test'
+    _title: 'test'
+  requirements:
+    _permission: 'access content'
+
+simple_struct.admin:
+  path: '/admin/config/system/simple-struct'
+  defaults:
+    _controller: '\Drupal\simple_struct\Controller\SimpleStructController::content'
+    _title: 'Estadísticas'
+  requirements:
+    _permission: 'access administration pages'

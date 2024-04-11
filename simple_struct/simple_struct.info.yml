@@ -1,0 +1,7 @@
+name: SimpleStruct
+type: module
+description: 'Desnormaliza ContentTypes para simplificar la estructura de datos.'
+core_version_requirement: ^9||^10
+package: Custom
+version: '1.0'
+project: 'simple_struct'

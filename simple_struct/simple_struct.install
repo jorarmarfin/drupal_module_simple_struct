@@ -1,0 +1,70 @@
+<?php
+/**
+ * Implements hook_schema().
+ */
+function simple_struct_schema(): array
+{
+    $schema['simple_struct_data'] = [
+        'description' => 'Almacena registros de eventos.',
+        'fields' => [
+            'id' => [
+                'description' => 'ID único para cada registro de asistencia.',
+                'type' => 'serial',
+                'unsigned' => TRUE,
+                'not null' => TRUE,
+            ],
+            'nid' => [
+                'description' => 'ID del nodo asociado a la asistencia.',
+                'type' => 'int',
+            ],
+            'evento' => [
+                'description' => 'El evento asociado a la asistencia.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+            'sector' => [
+                'description' => 'El sector asociado a la asistencia.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+            'codigo_actividad' => [
+                'description' => 'El codigo asociado a la actividad.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+            'codigo_sub_actividad' => [
+                'description' => 'El codigo asociado a la sub-actividad.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+            'actividad' => [
+                'description' => 'El titulo de la actividad.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+            'sub_actividad' => [
+                'description' => 'El titulo de la actividad.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+            'participante' => [
+                'description' => 'El participante asistente.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+            'sexo' => [
+                'description' => 'El sexo del asistente.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+            'distrito' => [
+                'description' => 'El distrito asociado al asistente.',
+                'type' => 'varchar',
+                'length' => 255,
+            ],
+        ],
+        'primary key' => ['id'],
+    ];
+
+    return $schema;
+}
